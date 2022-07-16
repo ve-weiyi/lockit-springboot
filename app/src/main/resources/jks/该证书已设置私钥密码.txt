@@ -1,0 +1,6 @@
+该证书私钥密码由您自行保管，腾讯云井未存储该证书私钥密码。
+    密码:ve77.cn
+什么是私钥密码？
+https://cloud.tencent.com/document/product/400/68073
+忘记私钥密码怎么办
+https://cloud.tencent.com/document/product/400/7421

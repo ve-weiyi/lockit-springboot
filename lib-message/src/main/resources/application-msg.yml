@@ -1,0 +1,29 @@
+spring:
+  # mq配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        retry:
+          enabled: true
+          max-attempts: 3 #最大重试次数
+          initial-interval: 3000 #重试间隔时间（单位毫秒）
+
+  # 邮箱配置
+  mail:
+    host: smtp.qq.com
+    # 邮箱 647166282@qq.com
+    username: 647166282@qq.com
+    # 16位授权码 不是邮箱密码
+    password: culyqmzvmppabccd
+    default-encoding: UTF-8
+    port: 587
+    properties:
+      mail:
+      smtp:
+      auth: true
+      socketFactory:
+      class: javax.net.ssl.SSLSocketFactory

@@ -1,0 +1,59 @@
+spring:
+  profiles:
+    active: dev,auth,msg,upload
+
+author:
+  name: ve
+  github: https://github.com/ve-weiyi
+  qq: 791422171
+  email: 791422171@qq.com
+
+project:
+  host: https://ve77.cn
+  ip: 110.42.180.40
+  name: 博客
+  packageName: com.ve.blog
+  version: 1.0.0
+  license:
+  licenseUrl:
+  termsOfServiceUrl: https://ve77.cn/blog
+  desc: 床前明月光，疑是地上霜。
+
+## Mybatis SQL 打印(方法接口所在的包，不是Mapper.xml所在的包)
+logging:
+  level:
+    com.ve.blog.dao: debug
+  ###指定log4j.properties配置文件路径
+  #config: classpath:log/log4j.properties
+  config: classpath:logxml/logback.xml
+
+
+knife4j:
+  enable: true
+  documents:
+    - group: 2.X版本
+      name: 接口签名
+      #      markdown文件路径
+      locations: classpath:markdowns/*
+  #      前端Ui的个性化配置属性
+  setting:
+    swaggerModelName: locker 实体类列表
+    #    如果开启，后端变化后Ui界面会存在小蓝点
+    enableVersion: true
+    enableHost: false
+    #    自定义主页内容
+    enableHomeCustom: false
+    homeCustomLocation: classpath:markdowns/home.md
+    #    自定义底部Footer的内容
+    enableFooter: false
+    enableFooterCustom: true
+    footerCustomContent: Copyright  2022-[locker](https://github.com/7914-ve/locker)
+  #    是否开启一个默认的跨域配置,该功能配合自定义Host使用
+  cors: false
+  basic:
+    #    是否开启密码访问
+    enable: false
+    username: test
+    password: 123456
+
+

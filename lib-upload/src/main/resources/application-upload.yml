@@ -1,0 +1,17 @@
+
+# 上传模式 可选 oss或local  （/一定不能去！！！）
+upload:
+  mode: oss
+  local:
+    # nginx映射本地文件路径，无域名则为 ip +端口
+    url: https://ve77.cn/
+    # 本地文件存储路径，不加/则为当前目录下
+    path: blog/upload/
+
+  oss:
+    #    没钱买https
+    url: https://static.ve77.cn/blog/
+    endpoint: oss-cn-beijing.aliyuncs.com
+    bucketName: veport
+    accessKeyId: LTAI5tP7D8BmkL9py6zunshJ
+    accessKeySecret: lsLhg3GP8By9qLpC9e29Zaxz8xG6ok

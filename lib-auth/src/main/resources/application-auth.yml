@@ -1,0 +1,26 @@
+
+# jwt令牌 自定义属性，所以报黄
+jwt:
+  # JWT存储的请求头
+  # 正常前端请求 tokenHeader：Authorization 是key tokenHead：Bearer是它的 value 加上空格然后jwt令牌，组成一个请求
+  tokenHeader: Authorization
+  # JWT 加解密使用的密钥
+  secret: jwt-secret
+  # JWT的超期限时间（60*60*24）
+  expiration: 604800
+  # JWT 负载中拿到开头
+  tokenHead: Bearer
+
+#第三方配置信息
+qq:
+  app-id: 101993700
+  check-token-url: https://graph.qq.com/oauth2.0/me?access_token={access_token}
+  user-info-url: https://graph.qq.com/user/get_user_info?openid={openid}&access_token={access_token}&oauth_consumer_key={oauth_consumer_key}
+
+weibo:
+  app-id: 2658270041
+  app-secret: 29a13e1454d7bff1c2a255185454bb86
+  grant-type: authorization_code
+  redirect-url: https://ve77.cn/blog/oauth/login/weibo
+  access-token-url: https://api.weibo.com/oauth2/access_token
+  user-info-url: https://api.weibo.com/2/users/show.json?uid={uid}&access_token={access_token}
