@@ -1,4 +1,8 @@
-# auth
+## lockit
+lockit APP 后台项目，使用springboot开发
+
+
+# 部署
 springboot 打包
 点击左下角maven
 右上角父项目[生命周期]-> package
